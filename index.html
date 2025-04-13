@@ -37,7 +37,7 @@
   </style>
 </head>
 <body>
-  <!-- HEADER -->
+ 
   <header class="bg-primary text-white p-3">
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container-fluid">
@@ -72,15 +72,34 @@
     <div class="row">
       <!-- LEFT -->
       <aside class="col-lg-2 col-md-3 mb-3">
-        <div class="slider">
-          <img src="img/angrycat.jpg" alt="Зображення 1">
-          <img src="img/cathead.jpg" alt="Зображення 2">
-          <img src="img/catwizard.jpg" alt="Зображення 3">
-          <img src="img/programistcat.jpg" alt="Зображення 4">
-        </div>
+        <div id="leftSlider" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="img/angrycat.jpg" class="d-block w-100" alt="Зображення 1">
+    </div>
+    <div class="carousel-item">
+      <img src="img/cathead.jpg" class="d-block w-100" alt="Зображення 2">
+    </div>
+    <div class="carousel-item">
+      <img src="img/catwizard.jpg" class="d-block w-100" alt="Зображення 3">
+    </div>
+    <div class="carousel-item">
+      <img src="img/programistcat.jpg" class="d-block w-100" alt="Зображення 4">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#leftSlider" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Попереднє</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#leftSlider" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Наступне</span>
+  </button>
+</div>
+
       </aside>
 
-      <!-- MAIN -->
+      
       <main class="col-lg-8 col-md-6 mb-3">
         <div class="accordion" id="mainAccordion">
           <div class="accordion-item">
@@ -151,7 +170,7 @@
   </div>
   </div>
 
-  <!-- FOOTER -->
+  
   <footer class="bg-light text-center p-3 mt-4">
     <p>Звичайний Footer</p>
   </footer>
